@@ -97,7 +97,7 @@ main {
     }
 }
 /* mobile phone */
-@media (max-width: 576px) {
+@media (max-width: 1080px) {
     html {
         font-size: 50%;
         /* margin-top: -300px */
