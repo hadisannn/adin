@@ -1,0 +1,95 @@
+:root {
+    /* gradasi kuning */
+    --goldenSand: #ffe5b4;
+    --sunsetAmber: #ff9e4f;
+    --burntSienna: #b55233;
+    --darkCognac: #5a3228;
+    /* gradasi biru */
+    --mistyAqua: #d4f2f4;
+    --caribeanTeal: #0197a6;
+    --peacockBlue: #015f69;
+    --deepTeal: #003d40;
+    /* gradasi ungu */
+    --softLavender: #e5e6fa;
+    --pastelPlum: #a87ca0;
+    --deepViolet: #5e2b6d;
+    --royalAubergine: #2a0f3c;
+
+    --shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/adin-wedding4.jpg);
+    background-size: 100%;
+    z-index: -1;
+    /* filter: grayscale; */
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /* background-color: var(--deepTeal); */
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+    text-shadow: 2px 2px var(--deepTeal);
+    margin-top: 10px
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+    text-shadow: 2px 2px var(--deepTeal);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    text-shadow: 2px 2px var(--deepTeal);
+}
+
+.hero a {
+    color: var(--deepTeal);
+    background-color: white;
+    box-shadow: 2px 2px var(--deepTeal);
+}
+
+.hero a:hover {
+    background-color: var(--peacockBlue);
+    color: white;
+}
+
+
+/* Media Query */
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+}
+/* tablet */
+@media (max-width: 728px) {
+    html {
+        font-size: 55%;
+    }
+}
+/* mobile phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+        /* margin-top: -300px */
+    }
+}
